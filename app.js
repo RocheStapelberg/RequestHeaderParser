@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
 
+// whoami Router 
 app.use('/api', whoamiRouter);
 
 app.listen(PORT, HOST, () => {
