@@ -1,0 +1,18 @@
+{
+  "name": "rhparser",
+  "version": "1.0.0",
+  "description": "Request Header parser",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Roche Stapelberg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
