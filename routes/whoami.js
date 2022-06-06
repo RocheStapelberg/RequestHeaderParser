@@ -10,6 +10,9 @@ whoamiRouter.get('/whoami', (req, res) => {
     const userAgent = req.headers['user-agent'];
     //Store data in a JSON object.
     const data = {"ipaddress": ip, "language": language,"software": userAgent }
+    
+    let now = new Date();
+    console.log('\x1b[36m%s\x1b[0m', `New request from ${ ip } | Time: ${now} `);
     //Send response as JSON
     res.json(data);
 });
